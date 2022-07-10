@@ -1,0 +1,17 @@
+nrfjprog -i
+
+west build -p auto -b nrf52840dk_nrf52840 ./app/peripheral_SC_xor/.
+west flash
+
+nrfjprog --eraseall -f nrf52 -s 683865272 683671544
+
+sudo env LANG=en_US minicom -D /dev/ttyACM0 -b 115200
+sudo env LANG=en_US minicom -D /dev/ttyACM0 -b 115200 -C ~/ulog/a.log
+
+ll /sys/class/tty/ttyUSB*
+ll /sys/class/tty/
+
+com
+
+
+west build -p auto -b nrf52840dk_nrf52840 ./samples/bluetooth/peripheral_sc_only/                    
