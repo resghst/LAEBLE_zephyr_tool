@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "aes.h": "c"
+    },
+    "restructuredtext.confPath": "",
+    "esbonio.server.enabled": true
+}
